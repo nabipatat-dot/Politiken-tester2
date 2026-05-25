@@ -1,0 +1,57 @@
+@custom-variant dark (&:is(.dark *));
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=Barlow:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-sans: 'Barlow', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-body: 'Source Serif 4', Georgia, serif;
+
+  --pol-red: #C8102E;
+  --pol-red-dark: #9e0c24;
+  --pol-black: #111111;
+  --pol-ink: #1a1a1a;
+  --pol-gray-900: #1c1c1c;
+  --pol-gray-700: #4a4a4a;
+  --pol-gray-500: #767676;
+  --pol-gray-300: #c8c8c8;
+  --pol-gray-100: #f4f3f0;
+  --pol-cream: #faf9f6;
+  --pol-border: #dddbd6;
+
+  --background: var(--pol-cream);
+  --foreground: var(--pol-ink);
+  --card: #ffffff;
+  --card-foreground: var(--pol-ink);
+  --popover: #ffffff;
+  --popover-foreground: var(--pol-ink);
+  --primary: var(--pol-red);
+  --primary-foreground: #ffffff;
+  --secondary: var(--pol-gray-100);
+  --secondary-foreground: var(--pol-ink);
+  --muted: var(--pol-gray-100);
+  --muted-foreground: var(--pol-gray-500);
+  --accent: var(--pol-gray-100);
+  --accent-foreground: var(--pol-ink);
+  --destructive: var(--pol-red);
+  --destructive-foreground: #ffffff;
+  --border: var(--pol-border);
+  --input: transparent;
+  --input-background: var(--pol-gray-100);
+  --ring: var(--pol-red);
+  --radius: 0;
+  --font-size: 16px;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--pol-cream);
+  color: var(--pol-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif { font-family: var(--font-serif) !important; }
+.font-body { font-family: var(--font-body) !important; }
